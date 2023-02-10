@@ -1,9 +1,9 @@
 import { config } from 'dotenv';
 config();
 
-import express, { Express } from 'express';
+import express from 'express';
 import { createApp } from './utils/createApp';
-
+import './database';
 const app = express();
 
 const port = process.env.PORT || 3000;

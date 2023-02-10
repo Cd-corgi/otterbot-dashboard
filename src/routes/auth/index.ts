@@ -1,8 +1,14 @@
 import { Router } from "express";
+import passport from "passport";
+
 const router = Router();
 
-router.get("/", (req, res) => {
+router.get("/discord", passport.authenticate("discord"), (req, res) => {
     res.sendStatus(200)
+})
+
+router.get("/discord/redirect", passport.authenticate("discord"), (req, res) => {
+    res.send({ msg: 'Connected!' })
 })
 
 export default router;
