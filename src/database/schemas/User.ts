@@ -1,9 +1,10 @@
 import mongoose from 'mongoose'
 
-interface User {
-    discordId: String,
-    acessToken: String,
-    refreshToken: String
+export interface User {
+    id: string;
+    discordId: string,
+    acessToken: string,
+    refreshToken: string
 }
 
 let schema = new mongoose.Schema<User>({

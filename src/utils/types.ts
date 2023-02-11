@@ -1,8 +1,8 @@
 export type partialGuild = {
-    id: String;
-    name: String;
-    icon: String;
+    id: string;
+    name: string;
+    icon: string;
     owner: Boolean;
-    permissions: String;
-    features: String[]
+    permissions: string;
+    features: string[]
 }
