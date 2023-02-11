@@ -34,7 +34,6 @@ passport.use(
                 { acessToken, refreshToken },
                 { new: true }
             );
-            console.log(`Existing ${existsU}`)
             if (existsU) return done(null, existsU);
             const newUser = new User({
                 discordId,
